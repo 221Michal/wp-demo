@@ -1,5 +1,5 @@
 import Unsplash from 'unsplash-js';
-import { ACCESS_KEY, APP_SECRET, APP_CALLBACK_URL } from "./Unsplash";
+import { ACCESS_KEY, APP_SECRET, APP_CALLBACK_URL } from "./UnsplashConst";
 
 
 const unsplash = new Unsplash({
