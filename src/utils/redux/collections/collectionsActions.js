@@ -10,7 +10,6 @@ export const FEATURED_COLLECTION_PHOTOS_FETCH_ERROR = "FEATURED_COLLECTION_PHOTO
 
 export function fetchFeaturedCollections() {
     return function (dispatch) {
-        console.log(unsplash.collections)
         dispatch({ type: FEATURED_COLLECTIONS_FETCH_START });
         unsplash.collections.listFeaturedCollections(1, 10)
             .then(toJson)
@@ -43,7 +42,6 @@ export function fetchFeaturedCollectionPhotos(collectionId) {
         unsplash.collections.getCollectionPhotos(collectionId, 1, 10, 'latest')
             .then(toJson)
             .then(json => {
-                console.log(collectionId, json, "asd")
                 dispatch(fetchFeaturedCollectionPhotosSuccess(collectionId, json));
         });
     }
