@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import { fetchPhoto } from '../../utils/redux/photos/photosAction';
 import FacebookShare from './components/FacebookShare';
 import './Photo.scss'
@@ -60,10 +59,6 @@ class Photo extends Component {
         );
     }
 }
-
-Photo.propTypes = {
-
-};
 
 function mapStateToProps(store) {
     return {

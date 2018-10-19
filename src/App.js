@@ -3,7 +3,6 @@ import React, { Component } from 'react'; import {
     Route,
     Switch,
 } from 'react-router-dom'
-import PropTypes from 'prop-types';
 import './App.scss';
 import Collections from './routes/collections/Collections';
 import Collection from './routes/collection/Collection';
@@ -31,9 +30,5 @@ class App extends Component {
         );
     }
 }
-
-App.propTypes = {
-
-};
 
 export default App;

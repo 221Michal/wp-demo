@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import InfiniteScroll from 'react-infinite-scroller';
-import PropTypes from 'prop-types';
 import { fetchFeaturedCollections } from '../../utils/redux/collections/collectionsActions';
 import { fetchPhotos } from '../../utils/redux/photos/photosAction';
 import PhotoItem from './components/PhotoItem';
@@ -82,10 +81,6 @@ class Collection extends Component {
         );
     }
 }
-
-Collection.propTypes = {
-
-};
 
 function mapStateToProps(store) {
     return {

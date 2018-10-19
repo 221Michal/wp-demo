@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import CollectionItem from './components/CollectionItem';
 import { fetchFeaturedCollections } from '../../utils/redux/collections/collectionsActions';
 
@@ -34,10 +33,6 @@ class Collections extends Component {
         );
     }
 }
-
-Collections.propTypes = {
-    collections: PropTypes.object,
-};
 
 function mapStateToProps(store) {
     return {

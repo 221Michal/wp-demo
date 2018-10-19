@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import './PhotoItem.scss'
 
 class PhotoItem extends Component {
@@ -47,9 +46,5 @@ class PhotoItem extends Component {
         );
     }
 }
-
-PhotoItem.propTypes = {
-
-};
 
 export default withRouter(PhotoItem);

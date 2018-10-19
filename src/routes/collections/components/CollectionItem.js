@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import CollectionImgPreview from './CollectionImgPreview';
 
@@ -36,9 +35,5 @@ class CollectionItem extends React.Component {
         );
     }
 }
-
-CollectionItem.propTypes = {
-    collections: PropTypes.object,
-};
 
 export default CollectionItem;
