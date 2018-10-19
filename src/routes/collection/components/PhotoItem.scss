@@ -1,0 +1,17 @@
+.data-overlay {
+    background-color: black;
+    opacity: 0;
+    height: 100%;
+    transition: .5s ease;
+    &:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    div {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
