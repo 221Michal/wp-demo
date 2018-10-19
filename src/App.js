@@ -16,7 +16,7 @@ class App extends Component {
         return (
             <div className="App" >
                 <Router>
-                    <div>
+                    <div style={{ height: '100%' }}>
                         <HeaderNav />
                         <Switch>
                             <Route path="/collection/:id" component={Collection} />
