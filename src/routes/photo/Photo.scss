@@ -1,0 +1,14 @@
+html, body, div#root, div.App, div.container {
+    height: 100%;
+  }
+  img {
+    padding: 40px 0 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .container img:hover {
+    cursor: zoom-in;
+  }

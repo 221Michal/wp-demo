@@ -9,5 +9,5 @@ import { Provider } from 'react-redux';
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 const store = createStoreWithMiddleware(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
-var mountNode = document.getElementById("app");
+var mountNode = document.getElementById("App");
 ReactDOM.render(<Provider store={store}><App /></Provider>, mountNode);

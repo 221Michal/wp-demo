@@ -13,7 +13,7 @@ import './utils/bootstrap.min.css'
 class App extends Component {
     render() {
         return (
-            <div className="app" >
+            <div className="App" >
                 <Router>
                     <Switch>
                         <Route path="/collection/:id" component={Collection} />

@@ -12,7 +12,7 @@ class PhotoItem extends Component {
 
     onPhotoClick() {
         const { id } = this.props.photo;
-        this.props.history.push(`/photos/${id}`);
+        this.props.history.push(`/photo/${id}`);
     }
 
     render() {
