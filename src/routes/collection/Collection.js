@@ -22,10 +22,8 @@ class Collection extends Component {
     }
 
     loadMore(page) {
-        console.log("asd")
         if (!this.props.fetching) {
             const sortOrder = this.sortSelect.value;
-            console.log(sortOrder)
             const { pageCount } = this.state;
             if (page === 0) {
                 this.props.fetchPhotos(this.props.match.params.id, 1, sortOrder);

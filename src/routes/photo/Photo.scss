@@ -1,14 +1,44 @@
-html, body, div#root, div.App, div.container {
+html,
+body,
+div#root,
+div.App,
+div.container {
     height: 100%;
-  }
-  img {
-    padding: 40px 0 0;
+}
+
+img {
+    padding: 0 0 20px;
     display: block;
     margin: 0 auto;
     max-height: 100%;
     max-width: 100%;
-  }
+}
 
-  .container img:hover {
+.container img:hover {
     cursor: zoom-in;
-  }
+}
+
+.photo-data {
+    padding-top: 40px;
+    .photo-data-row {
+        text-align: left;
+    }
+    .photo-border-left {
+        border: 1px solid black;
+        border-bottom: none;
+    }
+    .photo-border-right {
+        border: 1px solid black;
+        border-left: none;
+        border-bottom: none;
+    }
+    .photo-border-left-last {
+        border: 1px solid black;
+        margin-bottom: 40px;
+    }
+    .photo-border-right-last {
+        border: 1px solid black;
+        border-left: none;
+        margin-bottom: 40px;
+    }
+}

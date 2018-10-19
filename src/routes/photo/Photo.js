@@ -36,16 +36,26 @@ class Photo extends Component {
 
         return (
             <div className="container">
-                <img src={currentPhoto.urls.full} style={imgStyle} onClick={this.onImgClick} alt="img" />
-                <div>
-                    <p>Autor: {user.name}</p>
-                    <p>Miejsce wykonania: {(location && location.country) ? location.country : 'N/D'}</p>
-                    <p>Pobrano {downloads} razy</p>
-                    <p>Polubiono {likes} razy</p>
-                    <p>Wyświetlono {views} razy</p>
-                </div>
-                <FacebookShare shareurl={links.html} />
-            </div>
+                <div className="photo-data">
+                    <div className="photo-data-row row justify-content-md-center">
+                        <div className="col-md-2 photo-border-left">Autor:</div> <div className="col-md-3 photo-border-right">{user.name}</div>
+                    </div>
+                    <div className="photo-data-row row justify-content-md-center">
+                        <div className="col-md-2 photo-border-left">Miejsce wykonania:</div> <div className="col-md-3 photo-border-right">{(location && location.country) ? location.country : 'N/D'}</div>
+                    </div>
+                    <div className="photo-data-row row justify-content-md-center">
+                        <div className="col-md-2 photo-border-left">Pobrano:</div> <div className="col-md-3 photo-border-right">{downloads}</div>
+                    </div>
+                    <div className="photo-data-row row justify-content-md-center">
+                        <div className="col-md-2 photo-border-left">Polubiono:</div> <div className="col-md-3 photo-border-right">{likes}</div>
+                    </div>
+                    <div className="photo-data-row row justify-content-md-center">
+                        <div className="col-md-2 photo-border-left-last">Wyświetlono:</div> <div className="col-md-3 photo-border-right-last">{views} razy</div>
+                    </div>
+            </div >
+            <img src={currentPhoto.urls.full} style={imgStyle} onClick={this.onImgClick} alt="img" />
+            <FacebookShare shareurl={links.html} />
+            </div >
 
         );
     }
