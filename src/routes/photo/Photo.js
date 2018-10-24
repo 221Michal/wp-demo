@@ -23,7 +23,6 @@ class Photo extends Component {
     render() {
         const currentId = this.props.match.params.id;
         const currentPhoto = this.props.singlePhotos[currentId];
-        console.log(this.state)
 
         if (!currentPhoto) {
             return 'Wczytywanie...';
